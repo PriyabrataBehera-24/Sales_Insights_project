@@ -17,19 +17,25 @@ Follow these instructions to set up the project locally on your machine.
 
 ### Instructions to Setup MySQL on Your Local Computer
 1.Install MySQL on your local computer.
+
 2.The SQL database dump is in the db_dump.sql file above.
+
 3.Download the db_dump.sql file to your local computer and import it into MySQL.
 
 ## Data Analysis Using SQL
 
 1.Show all customer records :
  SELECT * FROM customers;
+ 
 2.Show the total number of customers :
  SELECT COUNT(*) FROM customers;
+ 
 3.Show transactions where the currency is US dollars: 
  SELECT * FROM transactions WHERE currency='USD';
+ 
 4.Show transactions in 2020 joined by the date table: 
  SELECT transactions.*, date.* FROM transactions INNER JOIN date ON transactions.order_date=date.date WHERE date.year=2020;
+ 
 5.Show total revenue in the year 2020: 
  SELECT SUM(transactions.sales_amount * CASE WHEN currency='USD' THEN 75 ELSE 1 END) FROM transactions INNER JOIN date ON transactions.order_date=date.date WHERE date.year=2020;
 
@@ -40,10 +46,12 @@ Follow these instructions to set up the project locally on your machine.
 
 ## Usage
 1.Open the Power BI file (.pbix) in Power BI Desktop.
+
 2.Explore the different reports and visualizations.
 
 ## Acknowledgements
 1.Special thanks to Hemanand for his expertise and contributions to the project.
+
 2.Inspired by real-world data analysis projects to provide a practical learning experience.
 
 
