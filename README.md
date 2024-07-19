@@ -12,7 +12,9 @@ Follow these instructions to set up the project locally on your machine.
 
 ### Prerequisites
 1.Power BI Desktop 
+
 2.MySQL Server
+
 3.Basic knowledge of data analysis and visualization
 
 ### Instructions to Setup MySQL on Your Local Computer
